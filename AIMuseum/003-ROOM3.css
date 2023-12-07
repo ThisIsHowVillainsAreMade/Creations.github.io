@@ -57,7 +57,7 @@ body {
   /* width: 415px; */
   overflow: hidden;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-wrap: wrap;
   align-content: flex-end;
@@ -71,9 +71,9 @@ body {
 }
 
 .titlecards {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   letter-spacing: 1.15px;
   margin: 0em;
   color: var(--clr-white);
@@ -201,7 +201,7 @@ body {
 }
 
 .popup-image .popup-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   letter-spacing: 1.15px;
   margin-bottom: 1em;
@@ -252,9 +252,9 @@ body {
 
 .card.one {
   display: flex;
-  margin-left: 45em;
+  margin-left: 40em;
   height: 72%;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: flex-end;
   flex-wrap: wrap;
 }
@@ -264,15 +264,15 @@ body {
 }
 
 .card.three {
-  height: 34%;
+  height: 40%;
 }
 
 .card.four {
-  height: 53%;
+  height: 62%;
 }
 
 .card.five {
-  height: 42%;
+  height: 50%;
 }
 
 .card.six {
@@ -280,7 +280,7 @@ body {
 }
 
 .card.seven {
-  height: 61%;
+  height: 68%;
 }
 
 .textcards-one {
