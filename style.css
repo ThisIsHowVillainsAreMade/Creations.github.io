@@ -1,0 +1,37 @@
+:root {
+  --clr-1: white;
+  --clr-2: pink;
+  --clr-3: #5e374d;
+}
+
+body {
+  height: 100svh;
+  width: 100svh;
+  background: linear-gradient(
+    to right top,
+    #5e374d,
+    #6b4f67,
+    #786780,
+    #867f98,
+    #9698ad,
+    #a1a4b8,
+    #acb0c3,
+    #b8bcce,
+    #bfbed2,
+    #c7c0d4,
+    #d0c2d6,
+    #d8c4d7
+  );
+}
+
+a {
+  color: var(--clr-3);
+}
+
+a:hover {
+  color: var(--clr-1);
+}
+
+a:active {
+  color: var(--clr-2);
+}
