@@ -1,0 +1,35 @@
+/* TABLETTE */
+@media screen and (max-width: 1024px) {
+  #aivolution {
+    visibility: hidden;
+  }
+
+  .mainAbout {
+    margin-top: -26svh;
+  }
+
+  #ideaTitle {
+    margin-top: 50svh;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 400px) {
+  #robots {
+    height: 85svh;
+    object-fit: cover;
+  }
+
+  #sky {
+    height: 100svh;
+    object-fit: cover;
+  }
+
+  #aivolution {
+    visibility: hidden;
+  }
+
+  #ideaTitle {
+    margin-top: 50svh;
+  }
+}

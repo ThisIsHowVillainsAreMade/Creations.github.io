@@ -1,0 +1,205 @@
+.scene {
+  border: 1px solid #ccc;
+  margin: 40px 0;
+  position: relative;
+  z-index: 3;
+  width: 210px;
+  height: 140px;
+  margin: 80px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+  transform-style: preserve-3d;
+}
+
+div.carousel__cell {
+  opacity: 0.7 !important;
+}
+
+div.carousel__cell:hover {
+  opacity: 1 !important;
+}
+
+.carousel__cell:nth-child(7n + 1) {
+  background-image: url("../assets/carousel/oceane-what_a_hummingbird_abstract_art_green_generosity_headstrong_--a_211ba56d-893a-4d60-9353-3cc448fd68c2.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 2) {
+  background-image: url("../assets/carousel/samir-what_a_hummingbird_image_absctract_art_represent_color_black_ca_da800bd3-a838-4326-8256-cc76faaa2f9e.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 3) {
+  background-image: url("../assets/carousel/pauline-what_a_hummingbird_image_absctract_art_represent_color_blue_att_e5c5b9f5-0fba-4a66-ab75-ad8393a4bcaf.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 4) {
+  background-image: url("../assets/carousel/lyes-what_a_hummingbird_image_absctract_art_represent_color_blue_sha_cd907301-e8cb-4883-b5a0-dc978b3a77e6.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 5) {
+  background-image: url("../assets/carousel/hamidou-what_a_hummingbird_image_absctract_art_represent_color_black_in_78f2d9ed-2652-4b00-b1e6-e462be5f9b4e.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+.carousel__cell:nth-child(7n + 6) {
+  background-image: url("../assets/carousel/lucien-what_a_hummingbird_image_absctract_art_represent_color_orange_p_f9d4ddc2-590e-4b6b-bfc5-0bf313d3151d.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+
+.carousel__cell:nth-child(7n + 0) {
+  background-image: url("../assets/carousel/yohan-what_a_hummingbird_image_absctract_art_represent_color_Abyssal__1cb7932c-973e-4abb-8d6f-c86e32527097.png");
+  background-size: cover;
+  font-size: var(--fs-300);
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.inputToHide {
+  visibility: hidden;
+}
+
+.navcarouselbuttons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  margin: 0% 0% 0% 0%;
+}
+
+.labelp {
+  color: var(--clr-black);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+input[type="radio"] {
+  /* Reminder: disabling default browser styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*Personalization */
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--clr-black);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--clr-black);
+  border-color: var(--clr-black);
+}
+
+.previous-button,
+.next-button {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  border: 1px solid var(--clr-black);
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.15),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.108),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.089),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.075),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.061),
+    100px 100px 80px rgba(0, 0, 0, 0.042);
+}
+
+.previous-button:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-grey-300);
+  border: 1px solid var(--clr-grey-300);
+}
+.next-button:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-grey-300);
+  border: 1px solid var(--clr-grey-300);
+}
+
+.previous-button:active {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+}
+
+.next-button:active {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+}
+
+.carouselSection {
+  margin: 0px 10% 0 10%;
+  padding-bottom: 10%;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -37% 0% 0% 1%;
+}
+
+.linkedInButton {
+  height: 33px;
+}
+
+.githubButton {
+  height: 30px;
+}

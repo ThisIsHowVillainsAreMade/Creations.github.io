@@ -1,0 +1,82 @@
+#form-page {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+
+#formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3svh;
+  margin: 10%;
+  overflow-y: hidden;
+}
+
+#ideaTitle {
+  margin-top: 10svh;
+  font-style: italic;
+}
+
+#headerForm,
+#nameDiv,
+#emailDiv,
+#messageDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5svh;
+}
+
+#yourName,
+#yourEmail {
+  color: var(--clr-white);
+  background-color: var(--clr-grey-500);
+  border: solid 1px var(--clr-grey-500);
+  border-radius: 10px;
+  height: 7svh;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: var(--clr-grey-500);
+}
+
+#message {
+  height: 10svh;
+  color: var(--clr-white);
+  background-color: var(--clr-grey-500);
+  border: solid 1px var(--clr-grey-500);
+  border-radius: 10px;
+  width: 100%;
+}
+
+#submitButton {
+  height: 5svh;
+  color: var(--clr-white);
+  background-color: var(--clr-grey-500);
+  border: solid 1px var(--clr-grey-500);
+  border-radius: 10px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 8svh;
+}
+
+#submitButton:hover {
+  background-color: var(--clr-grey-400);
+}
+
+#submitButton:active {
+  background-color: var(--clr-grey-300);
+}
+
+.explicationsForm {
+  font-style: italic;
+}

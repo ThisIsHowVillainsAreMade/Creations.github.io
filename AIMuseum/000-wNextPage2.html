@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="FR_fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; }
+
+        /*000-Séquence titre en fondu */
+.wCover {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 1;
+    z-index: 1; /*REVOIR ICI    <<<=============================*/
+}
+.wCover p {
+    color: white;
+    font-size: 4rem;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+#overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 1s ease;
+            
+        }
+    </style>
+    </style>
+</head>
+<body>
+        <div class = "background"></div>
+
+        <script>
+            // 000-Séquence titre en fondu
+        document.addEventListener('DOMContentLoaded', function () {
+            const body = document.body;
+        
+            const wCover = document.createElement('div');
+            wCover.className = 'wCover';
+            body.appendChild(wCover);
+        
+            wCover.innerHTML = '<p>ROOM 2</p>';
+            // TEXT A CHANGER ICI                       <<<==============
+                
+                setTimeout(() => {
+                    wCover.querySelector('p').style.opacity = '1';
+                
+                    setTimeout(() => {
+                    wCover.style.transition = 'opacity 2s ease';
+                    wCover.style.opacity = '0';
+        
+                        setTimeout(() => {
+                        body.removeChild(wCover);
+                        }, 1600);
+                     }, 1500);
+                }, 250);
+        });
+        
+        // Fonction pour afficher l'overlay avant de lancer le lien
+                function showOverlay() {
+                    const wOverlay = document.createElement('div');
+                    wOverlay.id='overlay';
+                    document.body.appendChild(wOverlay);
+                    const overlay = document.getElementById('overlay');
+                    
+                    setTimeout(() => {
+                    overlay.style.opacity = '1';
+        
+                    setTimeout(function() {
+                        // Une fois que votre animation est terminée, vous pouvez rediriger vers le lien
+                        window.location.href = "000-wNextPage2.html"; // Remplacez avec votre lien réel
+                    }, 500); // Exemple : attendre 2 secondes avant de rediriger
+                },0);
+                }
+        </script>
+</body>
+</html>
