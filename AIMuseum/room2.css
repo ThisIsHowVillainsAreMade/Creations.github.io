@@ -39,6 +39,8 @@ main{
   padding-left: 4rem;
   justify-content: center;
   width: 30rem;
+  font-family: "SF-Pro-Display";
+  
   
   
 }
@@ -46,7 +48,9 @@ main{
   opacity: 0;
   color: var(--clr-grey-200);
   font-size: 1.5rem;
-  
+  font-family: "SF-Pro-Display";
+  align-items: center;
+  padding: 2rem
   
 }
 .descrip {
@@ -86,7 +90,7 @@ main{
  #image1{
   height: 18rem; 
   width:17rem;
-  transform: translate(10%,50%);
+  transform: translate(20%,50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +107,7 @@ main{
  } 
  #image3{
   height:20.75rem; 
-  width:20.8rem;
+  width:23.8rem;
   transform: translate(800%,300%);
   display: flex;
   align-items: center;
@@ -141,7 +145,7 @@ main{
 
 #image7{
   height:25.75rem; 
-  width:20.6rem;
+  width:25.6rem;
   transform: translate(-400%,250%);
   display: flex;
   align-items: center;

@@ -75,7 +75,7 @@ body {
   font-weight: 600;
   font-size: var(--fs-200);
   letter-spacing: 1.15px;
-  margin: 0em;
+  margin-left: 0.5em;
   color: var(--clr-white);
   z-index: 2;
   opacity: 0;

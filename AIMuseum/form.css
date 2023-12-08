@@ -3,6 +3,10 @@
   background-color: var(--clr-black);
 }
 
+#form-page::-webkit-scrollbar {
+  display: none;
+}
+
 #formContainer {
   display: flex;
   flex-direction: column;
